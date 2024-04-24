@@ -12,6 +12,12 @@ inputs:
       Custom ruleset to load in Spectral.
 
       When unspecified, will try to load the default ruleset (matching .spectral.{yaml,yml,js,json}) if it exists.
+  fail_severity:
+    required: false
+    description: |
+       Results of this level or above will trigger a failure exit code
+       
+       choices: "error", "warn", "info", "hint" [default: "error"]
   repo_token:
     required: false
     description: |
